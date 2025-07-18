@@ -1,17 +1,16 @@
-# CV3D_Perfusion
-RetCOV User Manual (v1.0)
+#RetCOV User Manual (v1.0)
 =========================
 
-Overview
+##Overview
 ---------
-RetCOV is a standalone MATLAB-based application for performing 3D Coefficient of Variation (CoV) analysis to quantify retinal capillary perfusion variability using OCT/OCTA imaging data.
+RetCOV is a processing framework designed to perform 3D Coefficient of Variation (CoV) analysis for quantifying retinal capillary perfusion variability using OCT/OCTA imaging data.
 
-System Requirements
+##System Requirements
 --------------------------------
 - Operating System: Windows 10 or later (64-bit)
 - MATLAB Runtime: R2023b (automatically prompted during installation if not installed)
 
-Required Toolboxes (for source users)
+##Required Toolboxes (for source users)
 -------------------------------------------------------
 Note: These toolboxes are only necessary if running the app from source code (.mlapp). They are **not** required for end users installing the standalone app.
 
@@ -24,7 +23,7 @@ Note: These toolboxes are only necessary if running the app from source code (.m
 - Econometrics Toolbox
 - Sensor Fusion and Tracking Toolbox
 
-Usage (for source users)
+##Usage (for source users)
 ---------
  Double-click `RetCoV.mlapp` to open the GUI. Make sure the path of helper functions is added to the MATLAB path.
 
