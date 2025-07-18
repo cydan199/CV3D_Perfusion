@@ -25,20 +25,19 @@ Note: These toolboxes are only necessary if running the app from source code (.m
 
 Installation
 ----------------
-1. Run the installer: `RetCOV_Installer_web.exe`.
+1. Run the installer: `RetCovInstaller_web.exe`.
 2. Follow the on-screen instructions to complete the installation.
 3. MATLAB Runtime will be automatically downloaded and installed if not already present.
 
 Usage
 ---------
 1. Set Parameter
-   a. Click **Change Function Path** → select the folder containing all helper functions  
-   b. Click **Select Data Directory** → choose your main data folder (`Your_Data_Directory`)
+   a. Click **Select Data Directory** → choose your main data folder (`Your_Data_Directory`)
       - Note: the main folder should contain subfolders with the name in the set: {Control, NTG, OAG} 
-   c. In the ‘Disease’ dropdown, select `CONTROL`, `NTG`, or `OAG`  (Currently only these three types are supported)
-   d. In the ‘Subject ID’ box, enter the subject folder name (e.g., `CV001`)  
-   e. In the ‘Timepoint(s)’ box, enter subfolder names (e.g., `OD_MAC_08121030AM`)  
-   f. Review and adjust default parameters as needed  
+   b. In the ‘Disease’ dropdown, select `CONTROL`, `NTG`, or `OAG`  (Currently only these three types are supported)
+   c. In the ‘Subject ID’ box, enter the subject folder name (e.g., `CV001`)  
+   d. In the ‘Timepoint(s)’ box, enter subfolder names (e.g., `OD_MAC_08121030AM`)  
+   e. Review and adjust default parameters as needed  
    Click **‘Set Parameters’** (yellow button)  
       - Check Runtime Log: it should list the detected files
 
@@ -57,7 +56,7 @@ Usage
 	   e. A new window will pop up showing the progress of B-scan-based CoV computation  
 
 
-3. DNN-based layer segmentation
+3. Retinal layer segmentation
    - layer boundary from the innermost to the outermost need to be label with number from 1-5
          ILM        = 1
      NFL - GCL  = 2
@@ -66,7 +65,12 @@ Usage
      
    - Save your segmentation result as "Boundary.nii.gz"
 
-4. Generate Projection Images
+4. Retinal Vessel Segmentation
+   a. vessel segmentation results need to be saved under folder:
+      SubjectID → Results3D → Timepoint → nifty
+   b. Please use the "*_enfaceOCTA_fromZeiss.nii" as a reference when deriving the segmentation
+
+5. Generate Projection Images
    a. Click **Generate projection images**
    4.1. Pop-up window: offset value
         a. Default start with ‘10’ → go back AFTER segmentation is done to check if the values are good, rerun this step and adjust if necessary)
@@ -77,7 +81,7 @@ Usage
         a. select ‘Boundary.nii.gz’
 
 
-5. Threshold & visualization
+6. Threshold & visualization
    a. Click ** Threshold & visualization ** to see histogram
 CoV values from instrument-processed data - choose tail point
 CoV values from volume-extracted data - choose same point as a)
