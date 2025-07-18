@@ -96,8 +96,10 @@ Click **`Threshold & visualization`** to see histogram
 - CoV values from B-scan basic CoV computation (choose same point as previous)
 - CoV values from B-scan basis CoV computation (deep vessels) - choose the intersection point (green circle)
 
-
-
+### 7. Visualization
+If you have multiple timepoints for a subject
+- Change the timepoint in the dropdown box of **Select Timepoints**
+- Click **`Visualization`** button to change the figures
 
 Support
 -------
