@@ -80,10 +80,10 @@ Usage (for source users)
 
 6. Threshold & visualization
    a. Click ** Threshold & visualization ** to see histogram
-CoV values from instrument-processed data - choose tail point
-CoV values from volume-extracted data - choose same point as a)
-CoV values from B-scan basic CoV computation -choose same point as a)
-CoV values from B-scan basis CoV computation (deep vessels) - choose the intersection point (green circle)
+	- CoV values from instrument-processed data - choose tail point
+	- CoV values from volume-extracted data - choose same point as a)
+	- CoV values from B-scan basic CoV computation -choose same point as a)
+	- CoV values from B-scan basis CoV computation (deep vessels) - choose the intersection point (green circle)
 
 
 
