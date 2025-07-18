@@ -5,24 +5,6 @@ Overview
 ---------
 RetCoV is a standalone MATLAB-based application for performing 3D Coefficient of Variation (CoV) analysis to quantify retinal capillary perfusion variability using OCT/OCTA imaging data.
 
-System Requirements
---------------------------------
-- Operating System: Windows 10 or later (64-bit)
-- MATLAB Runtime: R2023b (automatically prompted during installation if not installed)
-
-Required Toolboxes (for source users)
--------------------------------------------------------
-Note: These toolboxes are only necessary if running the app from source code (.mlapp). They are **not** required for end users installing the standalone app.
-
-- Simulink
-- Deep Learning Toolbox
-- Image Processing Toolbox
-- Computer Vision Toolbox
-- Natural-Order Filename Sort
-- Curve Fitting Toolbox
-- Econometrics Toolbox
-- Sensor Fusion and Tracking Toolbox
-
 Installation
 ----------------
 1. Run the installer: `RetCoVInstaller.exe`.
