@@ -55,10 +55,10 @@ Usage (for source users)
 3. Retinal layer segmentation
    - layer boundary from the innermost to the outermost need to be label with number from 1-5:
    
-     ILM        = 1
-     NFL - GCL  = 2
-     IPL - INL  = 3
-     OPL - ONL  = 4
+     * ILM        = 1
+     * NFL - GCL  = 2
+     * IPL - INL  = 3
+     * OPL - ONL  = 4
      
    - Save your segmentation result as "Boundary.nii.gz"
 
